@@ -62,7 +62,7 @@
 							<goal>checkin</goal>
 						</goals>
 						<configuration>
-							<includes>**/MANIFEST.MF</includes>
+							<includes>**/META-INF/MANIFEST.MF</includes>
 							<message>blub</message>
 						</configuration>
 					</execution>
