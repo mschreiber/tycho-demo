@@ -2,7 +2,7 @@
 <feature
       id="example-feature-2"
       label="%featureName"
-      version="0.2.0.qualifier"
+      version="0.2.0"
       provider-name="%providerName">
 
    <description>
