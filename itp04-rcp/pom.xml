@@ -12,7 +12,7 @@ Contributors:
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<groupId>example.group</groupId>
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
@@ -36,7 +36,7 @@ Contributors:
 		<scm>
 		<connection>scm:git:https://github.com/mschreiber/tycho-demo.git</connection>
 		<developerConnection>scm:git:https://github.com/mschreiber/tycho-demo.git</developerConnection>
-	  <tag>aTagForARelease</tag>
+	  <tag>a release tag</tag>
   </scm>
 	
 	<pluginRepositories>

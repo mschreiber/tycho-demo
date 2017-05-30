@@ -4,12 +4,12 @@
 
   <artifactId>org.tycho.demo.rootfiles.win</artifactId>
   <packaging>p2-installable-unit</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   
   <parent>
   	<groupId>example.group</groupId>
   	<artifactId>parent</artifactId>
-  	<version>1.0.0</version>
+  	<version>1.0.1-SNAPSHOT</version>
   </parent>
 
 </project>
