@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>tycho.demo.itp01</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>tycho.demo.itp01</module>
@@ -17,7 +17,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/mschreiber/tycho-demo.git</connection>
 		<developerConnection>scm:git:https://github.com/mschreiber/tycho-demo.git</developerConnection>
-	  <tag>mybbReleaseTag</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<repositories>
 		<repository>
