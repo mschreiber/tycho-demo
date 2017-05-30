@@ -17,7 +17,6 @@
 	<scm>
 		<connection>scm:git:https://github.com/mschreiber/tycho-demo.git</connection>
 		<developerConnection>scm:git:https://github.com/mschreiber/tycho-demo.git</developerConnection>
-		<tag>Your release tag</tag>
 	</scm>
 	<repositories>
 		<repository>
@@ -42,13 +41,15 @@
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-					<preparationGoals>org.eclipse.tycho:tycho-versions-plugin:1.1.0-SNAPSHOT:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:1.9.5:add org.apache.maven.plugins:maven-scm-plugin:1.9.5:checkin</preparationGoals>
-					<completionGoals>org.eclipse.tycho:tycho-versions-plugin:1.1.0-SNAPSHOT:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:1.9.5:add org.apache.maven.plugins:maven-scm-plugin:1.9.5:checkin</completionGoals>
+					<preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:1.9.5:add org.apache.maven.plugins:maven-scm-plugin:1.9.5:checkin</preparationGoals>
+					<completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:1.9.5:add org.apache.maven.plugins:maven-scm-plugin:1.9.5:checkin</completionGoals>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -62,13 +63,14 @@
 							<goal>checkin</goal>
 						</goals>
 						<configuration>
-							<includes>**/META-INF/MANIFEST.MF</includes>
+							<includes>**/META-INF/MANIFEST.MF, **/feature.xml, **/*.product</includes>
 							<message>blub</message>
 						</configuration>
 					</execution>
 				</executions>
 
 			</plugin>
+
 
 		</plugins>
 	</build>
