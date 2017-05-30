@@ -34,10 +34,11 @@ Contributors:
 		<module>root-files-windows</module>
 	</modules>
 
-	<scm>
+		<scm>
 		<connection>scm:git:https://github.com/mschreiber/tycho-demo.git</connection>
 		<developerConnection>scm:git:https://github.com/mschreiber/tycho-demo.git</developerConnection>
-	</scm>
+	  <tag>a release tag</tag>
+  </scm>
 	
 	<pluginRepositories>
 		<pluginRepository>
@@ -107,7 +108,7 @@ Contributors:
 							<goal>checkin</goal>
 						</goals>
 						<configuration>
-							<includes>**/META-INF/MANIFEST.MF</includes>
+							<includes>**/META-INF/MANIFEST.MF, **/feature.xml, **/*.product</includes>
 							<message>blub</message>
 						</configuration>
 					</execution>
@@ -118,3 +119,4 @@ Contributors:
 		</plugins>
 	</build>
 </project>
+
